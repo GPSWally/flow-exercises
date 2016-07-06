@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript | Flow | Three</title>
+</head>
+<body>
+
+	<div id = "output"> Player number </div>
+
+    <script>
+        
+        var player1Score = parseFloat(prompt("Player 1 Score:"));
+        var player2Score = parseFloat(prompt("Player 2 Score:"));
+        
+        if (player1Score > player2Score) {
+        	document.getElementById("output").innerHTML = "Player number 1 has a higher score.";
+        } else if (player1Score < player2Score){
+        	document.getElementById("output").innerHTML = "Player number 2 has a higher score.";
+        } else if (player1Score === player2Score){
+        	document.getElementById("output").innerHTML = "Player 1 and 2 scores are equal.";
+        } else {
+        	document.getElementById("output").innerHTML = "Please retry a wrong value was entered";
+        }
+        /*
+            Todo: Print out who is winning (higher score).
+        */
+        
+    </script>
+</body>
+</html>
