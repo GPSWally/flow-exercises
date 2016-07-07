@@ -13,7 +13,7 @@
             TODO: This script doesn't work properly for the temperature "70". Fix it so that it works well for all temperatures.
         */
     
-        var input_num = prompt("What's the temperature?");
+        var input_num = prompt("What's the temperature in degree F?");
         
         if (input_num < 30) {
             console.log("It's really cold.");
@@ -21,7 +21,7 @@
             console.log("It's pretty chilly.");
         } else if (input_num < 70) {
             console.log("It's warm.");
-        } else if (input_num >= 70) {
+        } else {
             console.log("It's hot!")
         }
     
